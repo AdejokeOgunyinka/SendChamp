@@ -1,6 +1,6 @@
-# SendChamp
+## SendChamp
 
-Test Instructions:   
+# Test Instructions:   
 - Setup a React app with Chakra-UI and RecoilJS 
 - Replicate our Pricing Page. 
 
