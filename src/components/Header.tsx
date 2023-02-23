@@ -5,7 +5,6 @@ import { useGetCountries } from "../api/pricing";
 
 const Header = () => {
   const { data: countries } = useGetCountries();
-  console.log({ countries });
 
   return (
     <Flex width="100%" justify="center">
@@ -38,12 +37,25 @@ const Header = () => {
         <Flex
           direction={{ base: "column", md: "row" }}
           rowGap="8px"
+          columnGap="16px"
           justify="center"
           align={{ base: "center", md: "unset" }}
         >
           <CustomSelect
             options={countries?.data
               ?.map((country: any) => country?.name?.official)
+              ?.sort((a: string, b: string) => (a === b ? 0 : a < b ? -1 : 1))}
+          />
+          <CustomSelect
+            options={countries?.data
+              ?.map(
+                (country: any) =>
+                  `${country?.name?.official} - ${
+                    country?.currencies
+                      ? Object?.keys(country?.currencies)?.toString()
+                      : "N/A"
+                  }`
+              )
               ?.sort((a: string, b: string) => (a === b ? 0 : a < b ? -1 : 1))}
           />
         </Flex>

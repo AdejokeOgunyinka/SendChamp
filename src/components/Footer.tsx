@@ -35,6 +35,8 @@ const Footer = () => {
                     color: "rgba(255, 255, 255, 0.7)",
                   }}
                   fontSize={{ base: "0.875rem", md: "1rem" }}
+                  fontFamily="DM Sans"
+                  fontWeight="400"
                 >
                   {inner?.name}
                 </Link>
@@ -53,11 +55,12 @@ const Footer = () => {
         align="center"
         columnGap="85px"
         pl={{ md: "43px" }}
-        pr={{ md: "27px" }}
+        // pr={{ md: "27px" }}
         direction={{ base: "column", lg: "row" }}
+        fontFamily="DM Sans"
       >
         <Image src="/footerLogo.svg" maxW="227px" />
-        <Flex align="center" mt={{ base: "12px", lg: "unset" }}>
+        <Flex mt={{ base: "12px", lg: "unset" }}>
           <Image
             src="/footerNGN.svg"
             display={{ base: "none", lg: "inline" }}
@@ -70,7 +73,7 @@ const Footer = () => {
             142, Ahmadu Bello Way, Victoria Island, Lagos, Nigeria
           </Text>
         </Flex>
-        <Flex align="center" mt={{ base: "20px", lg: "unset" }}>
+        <Flex mt={{ base: "20px", lg: "unset" }}>
           <Image
             src="/footerUSA.svg"
             display={{ base: "none", lg: "inline" }}

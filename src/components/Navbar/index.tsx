@@ -15,7 +15,7 @@ const Navbar = () => {
     <Flex
       align="center"
       justify={{ base: "space-between", lg: "unset" }}
-      height="88px"
+      height={{ base: "80px", md: "88px" }}
       width="100%"
     >
       <Image src="/logo.svg" mr="80px" maxW={{ base: "157px" }} />
@@ -53,8 +53,14 @@ const Navbar = () => {
           </Text>
         </Flex>
       </Flex>
-      <Flex display={{ base: "inline-block", lg: "none" }}>
-        <Image src={"/menuIcon.svg"} />
+      <Flex
+        display={{ base: "inline-block", lg: "none" }}
+        width="30px"
+        height="30px"
+        align="center"
+        pt="4px"
+      >
+        <Image src={"/menuIcon.svg"} width="20px" height="20px" />
       </Flex>
     </Flex>
   );
