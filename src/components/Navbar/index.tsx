@@ -12,9 +12,18 @@ const Navbar = () => {
   ];
 
   return (
-    <Flex align="center" height="88px" width="100%">
-      <Image src="/logo.svg" mr="80px" />
-      <Flex justify="space-between" width="100%">
+    <Flex
+      align="center"
+      justify={{ base: "space-between", lg: "unset" }}
+      height="88px"
+      width="100%"
+    >
+      <Image src="/logo.svg" mr="80px" maxW={{ base: "157px" }} />
+      <Flex
+        justify="space-between"
+        width="100%"
+        display={{ base: "none", lg: "inline-flex" }}
+      >
         <Flex columnGap="48px" align="center">
           {navItems?.map((item, index) => (
             <Text cursor="pointer" key={index}>
@@ -36,6 +45,9 @@ const Navbar = () => {
             🇳🇬
           </Text>
         </Flex>
+      </Flex>
+      <Flex display={{ base: "inline-block", lg: "none" }}>
+        <Image src={"/menuIcon.svg"} />
       </Flex>
     </Flex>
   );

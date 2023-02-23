@@ -33,12 +33,13 @@ function App() {
       <header className={"header-section"}>
         <Header />
       </header>
-      <main>
+      <main className="main-section">
         <Box
           w="100%"
           data-aos="fade-up"
           ref={domRef}
           className={`aos-init ${isVisible ? "aos-animate" : ""}`}
+          pos="relative"
         >
           <Pricing1 />
         </Box>

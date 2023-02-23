@@ -12,6 +12,7 @@ const CustomSelect: FC<ISelect> = ({ options }) => {
       height="64px"
       borderRadius="12px"
       bg="#fff"
+      w={{ base: "282px", md: "unset" }}
     >
       {options?.map((option, index) => (
         <option key={index} value={option}>

@@ -11,8 +11,6 @@ interface IPricingCard {
   unit: string;
   comingSoon: boolean;
   more?: boolean;
-  basis: string;
-  width: string;
 }
 const PricingCard: FC<IPricingCard> = ({
   icon,
@@ -24,15 +22,14 @@ const PricingCard: FC<IPricingCard> = ({
   unit,
   comingSoon,
   more,
-  basis,
-  width,
 }) => {
   return (
     <Box
-      p="40px"
+      px={{ base: "20px", md: "40px" }}
+      py="40px"
       border="1px solid rgba(25, 126, 239, 0.4)"
-      flexBasis={basis}
-      width={width}
+      flexBasis={{ base: "100%", md: "45%", xl: "31.4%" }}
+      width={{ base: "309px", md: "45%", xl: "33%" }}
       borderRadius="12px"
       height="358px"
       bg="#fff"
@@ -47,20 +44,34 @@ const PricingCard: FC<IPricingCard> = ({
       >
         <Image src={icon} w="32px" h="32px" />
       </Flex>
-      <Text mt="20px" mb="24px" fontSize="1.25rem" textAlign="left">
+      <Text
+        mt="20px"
+        mb="24px"
+        fontSize={{ base: "1.125rem", md: "1.25rem" }}
+        fontWeight="600"
+        textAlign="left"
+      >
         {header}
       </Text>
-      <Flex justify="space-between" mb="11px">
+      <Flex
+        justify="space-between"
+        mb="11px"
+        fontSize={{ base: "0.875rem", md: "1rem" }}
+      >
         <Text>{toSend}</Text>
         <Text>{toReceive}</Text>
       </Flex>
-      <Flex justify="space-between" align="center">
-        <Text>
-          NGN {sendAmount}/{unit}
+      <Flex
+        justify="space-between"
+        align="center"
+        fontSize={{ base: "0.875rem", md: "1rem" }}
+      >
+        <Text as={Flex}>
+          <b>NGN {sendAmount}</b>/{unit}
         </Text>
         {receiveAmount && (
-          <Text>
-            NGN {receiveAmount}/{unit}
+          <Text as={Flex}>
+            <b>NGN {receiveAmount}</b>/{unit}
           </Text>
         )}
         {comingSoon && (

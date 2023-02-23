@@ -10,22 +10,34 @@ const Header = () => {
   return (
     <Flex width="100%" justify="center">
       <Flex
-        maxW="50%"
+        maxW={{ base: "100%", lg: "50%" }}
         direction="column"
         paddingTop="96px"
         paddingBottom="96px"
       >
-        <Heading fontSize="3rem">Pricing for every business</Heading>
+        <Heading
+          fontSize={{ base: "2rem", md: "3rem" }}
+          fontWeight={{ base: "500", md: "600" }}
+          lineHeight={{ base: "35px", md: "52px" }}
+        >
+          Pricing for every business
+        </Heading>
         <Text
           color="#1a202c"
           marginTop="32px"
           marginBottom="64px"
           fontSize="1.125rem"
+          lineHeight={{ base: "24px", md: "28px" }}
         >
           No hidden fees or charges - simple & flexible pricing that fits with
           your business at any stage.
         </Text>
-        <Flex>
+        <Flex
+          direction={{ base: "column", md: "row" }}
+          rowGap="8px"
+          justify="center"
+          align={{ base: "center", md: "unset" }}
+        >
           <CustomSelect
             options={countries?.data
               ?.map((country: any) => country?.name?.official)
