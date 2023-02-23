@@ -1,3 +1,97 @@
+export const navItems = [
+  { name: "Products", popoverContent: [] },
+  {
+    name: "Developers",
+    popoverContent: [
+      {
+        name: "Api Reference",
+        icon: "/apiReference.svg",
+        link: "https://sendchamp.readme.io/?utm_campaign=sendchamp_api_reference",
+      },
+      {
+        name: "Tutorials",
+        icon: "/tutorials.svg",
+        link: "https://developers.sendchamp.com/tutorials?utm_campaign=sendchamp_developers_tutorials",
+      },
+      {
+        name: "Guides",
+        icon: "/guides.svg",
+        link: "https://docs.sendchamp.com/",
+      },
+      {
+        name: "SDKs/Libraries",
+        icon: "/sdks.svg",
+        link: "https://developers.sendchamp.com/libraries",
+      },
+      {
+        name: "Community",
+        icon: "/community1.svg",
+        link: "https://community.sendchamp.com/",
+      },
+      {
+        name: "Status Page",
+        icon: "/statusPage.svg",
+        link: "http://status.sendchamp.com/",
+      },
+    ],
+  },
+  {
+    name: "Company",
+    popoverContent: [
+      {
+        name: "About Sendchamp",
+        link: "https://www.sendchamp.com/about",
+      },
+      {
+        name: "Customers",
+        link: "https://www.sendchamp.com/customers",
+      },
+      {
+        name: "Our Blog",
+        link: "http://blog.sendchamp.com/",
+      },
+      {
+        name: "Careers",
+        link: "https://www.notion.so/Sendchamp-Careers-5efb1c88163d4b7e81a5aaa8a11fffd1",
+      },
+      {
+        name: "Contact",
+        link: "https://www.sendchamp.com/contact",
+      },
+      {
+        name: "Support",
+        link: "https://www.sendchamp.com/contact",
+      },
+    ],
+  },
+  {
+    name: "Use Cases",
+    popoverContent: [
+      {
+        name: "For Developers",
+        link: "https://www.sendchamp.com/use-cases#forDevelopers",
+      },
+      {
+        name: "For Marketers",
+        link: "https://www.sendchamp.com/use-cases#forMarketers",
+      },
+      {
+        name: "For Creators",
+        link: "https://www.sendchamp.com/use-cases#forCreators",
+      },
+      {
+        name: "For Startups",
+        link: "https://www.sendchamp.com/use-cases#forStartups",
+      },
+      {
+        name: "For Enterprise",
+        link: "https://www.sendchamp.com/use-cases#forEnterprise",
+      },
+    ],
+  },
+  { name: "Pricing" },
+];
+
 export const footerSection1 = [
   {
     header: "Products",
