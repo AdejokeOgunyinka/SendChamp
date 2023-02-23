@@ -50,6 +50,7 @@ const PricingCard: FC<IPricingCard> = ({
         fontSize={{ base: "1.125rem", md: "1.25rem" }}
         fontWeight="600"
         textAlign="left"
+        fontFamily="HafferXH-SemiBold"
       >
         {header}
       </Text>
@@ -57,6 +58,8 @@ const PricingCard: FC<IPricingCard> = ({
         justify="space-between"
         mb="11px"
         fontSize={{ base: "0.875rem", md: "1rem" }}
+        fontFamily="DM Sans"
+        fontWeight="400"
       >
         <Text>{toSend}</Text>
         <Text>{toReceive}</Text>
@@ -65,13 +68,15 @@ const PricingCard: FC<IPricingCard> = ({
         justify="space-between"
         align="center"
         fontSize={{ base: "0.875rem", md: "1rem" }}
+        fontFamily="DM Sans"
+        fontWeight="400"
       >
         <Text as={Flex}>
-          <b>NGN {sendAmount}</b>/{unit}
+          <b style={{ fontWeight: "700" }}>NGN {sendAmount}</b>/{unit}
         </Text>
         {receiveAmount && (
           <Text as={Flex}>
-            <b>NGN {receiveAmount}</b>/{unit}
+            <b style={{ fontWeight: "700" }}>NGN {receiveAmount}</b>/{unit}
           </Text>
         )}
         {comingSoon && (
@@ -84,6 +89,7 @@ const PricingCard: FC<IPricingCard> = ({
             justify="center"
             align="center"
             color="#197eef"
+            fontFamily="DM Sans"
           >
             Coming Soon
           </Flex>

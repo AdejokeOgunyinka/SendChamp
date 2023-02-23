@@ -26,13 +26,20 @@ const Navbar = () => {
       >
         <Flex columnGap="48px" align="center">
           {navItems?.map((item, index) => (
-            <Text cursor="pointer" key={index}>
+            <Text
+              cursor="pointer"
+              key={index}
+              fontFamily="DM Sans"
+              fontWeight="400"
+            >
               {item}
             </Text>
           ))}
         </Flex>
         <Flex align="center">
-          <Text mr="20px">Login</Text>
+          <Text mr="20px" fontFamily="DM Sans" fontWeight="400">
+            Login
+          </Text>
           <CustomButton
             label="Get Started"
             solid

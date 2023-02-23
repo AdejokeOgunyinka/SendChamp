@@ -19,6 +19,7 @@ const Header = () => {
           fontSize={{ base: "2rem", md: "3rem" }}
           fontWeight={{ base: "500", md: "600" }}
           lineHeight={{ base: "35px", md: "52px" }}
+          fontFamily="HafferXH-Medium"
         >
           Pricing for every business
         </Heading>
@@ -28,6 +29,8 @@ const Header = () => {
           marginBottom="64px"
           fontSize="1.125rem"
           lineHeight={{ base: "24px", md: "28px" }}
+          fontFamily="DM Sans"
+          fontWeight="400"
         >
           No hidden fees or charges - simple & flexible pricing that fits with
           your business at any stage.

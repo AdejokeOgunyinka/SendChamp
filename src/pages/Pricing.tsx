@@ -47,12 +47,13 @@ export const Pricing2 = () => {
         direction="column"
         align="center"
         justify="center"
-        maxW={{ base: "100%", md: "50%" }}
+        maxW={{ base: "100%", md: "42%" }}
       >
         <Text
           mb="24px"
           fontSize={{ base: "1.5rem", md: "2rem" }}
           fontWeight="600"
+          fontFamily="HafferXH-SemiBold"
         >
           Sendchamp for Startups
         </Text>
@@ -60,6 +61,8 @@ export const Pricing2 = () => {
           mb="48px"
           lineHeight={{ base: "24px", md: "28px" }}
           fontSize={{ base: "1rem", md: "1.125rem" }}
+          fontFamily="DM Sans"
+          fontWeight="400"
         >
           Apply for $1,000 in credits, if you are a startup that is less than 3
           years old with less than $500k in total funding.
@@ -84,12 +87,13 @@ export const Pricing3 = () => {
         direction="column"
         align="center"
         justify="center"
-        maxW={{ base: "100%", md: "50%" }}
+        maxW={{ base: "100%", md: "42%" }}
       >
         <Text
           mb="24px"
           fontSize={{ base: "1.5rem", md: "2rem" }}
           fontWeight="600"
+          fontFamily="HafferXH-SemiBold"
         >
           Start building better communication experience with Sendchamp
         </Text>
