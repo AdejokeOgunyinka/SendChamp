@@ -1,0 +1,52 @@
+#root {
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.App {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.nav-section {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.header-section {
+  min-height: 512px;
+}
+
+.nav-section, .header-section {
+  background-color: #eef4ff;
+}
+
+.nav-section, .header-section, .footer-section {
+  
+  padding: 0px 128px;
+  width: 100%;
+}
+
+.footer-section {
+  background-color: #0c253f;
+}
+
+[data-aos^=fade][data-aos^=fade].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
+}
+
+body[data-aos-easing=ease] [data-aos] {
+  transition-timing-function: ease;
+}
+
+body[data-aos-duration="1000"] [data-aos] {
+  transition-duration: 1s;
+}
+
+[data-aos^=fade][data-aos^=fade] {
+  opacity: 0;
+  transition-property: opacity,transform;
+}
